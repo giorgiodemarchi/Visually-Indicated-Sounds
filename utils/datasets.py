@@ -3,8 +3,8 @@ import boto3
 from io import BytesIO
 from torch.utils.data import Dataset
 from torchvision.io import read_video
-
-
+import tempfile
+import os
 
 class StronglyLabelledDataset(Dataset):
     """
@@ -47,18 +47,24 @@ class StronglyLabelledDataset(Dataset):
         id = folder.strip('_')[0]
         
         # Keys for video and metadata
-        video_key = f"{folder}/video.mp4"
-        metadata_key = f"{folder}/metadata.csv"
+        video_key = f"{self.directory_name}{folder}/video.mp4"
+        metadata_key = f"{self.directory_name}{folder}/metadata.csv"
+
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.mp4') as tmpfile:      
+            # Load video into temporary file
+            video_object = self.s3_client.get_object(Bucket=self.bucket_name, Key=video_key)
+            tmpfile.write(video_object['Body'].read())
+            tmpfile.flush()
+            
+            # Use the name of the temporary file to load video and audio with read_video
+            video, audio, info = read_video(tmpfile.name)
         
-        # Load video
-        video_object = self.s3_client.get_object(Bucket=self.bucket_name, Key=video_key)
-        video_content = BytesIO(video_object['Body'].read())
-        video, audio, info = read_video(video_content)
+        # Now, the temporary file can be deleted as video and audio are already loaded
+        os.unlink(tmpfile.name)
 
         if self.transform:
             video = self.transform(video)
         
-        # Load metadata
         metadata_object = self.s3_client.get_object(Bucket=self.bucket_name, Key=metadata_key)
         metadata_content = BytesIO(metadata_object['Body'].read())
         metadata_df = pd.read_csv(metadata_content)
@@ -88,6 +94,7 @@ class StronglyLabelledDataset(Dataset):
                     folder_names.append(folder_name)
 
         return folder_names
+
 
 
 
