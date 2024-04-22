@@ -5,6 +5,9 @@ from torch.utils.data import Dataset
 from torchvision.io import read_video
 import tempfile
 import os
+from torchvision.transforms import Compose, Lambda
+import torch
+import torchvision.transforms.functional as F
 
 class StronglyLabelledDataset(Dataset):
     """
@@ -16,14 +19,17 @@ class StronglyLabelledDataset(Dataset):
         :param set: The dataset split, e.g. 'train', 'test', 'val'.
         :param transform: Transformations to be applied to the video frames.
         """
-        self.transform = transform
+        self.transform = Compose([
+            Lambda(lambda video: [F.to_pil_image(frame) for frame in video]),  # Convert each frame to PIL Image
+            Lambda(lambda frames: [F.resize(frame, size=(224, 224)) for frame in frames]),  # Resize each frame
+            Lambda(lambda frames: torch.stack([F.to_tensor(frame) for frame in frames])),  # Convert frames to tensors and stack
+            Lambda(lambda frames: torch.stack([F.normalize(frame, mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]) for frame in frames]))  # Normalize and stack
+        ])
         
-        # Read credentials
-        with open('secrets.txt', 'r') as f:
-            lines = f.readlines()
-            AWS_SECRET_ACCESS_KEY = lines[0].split('=')[1].strip()
-            AWS_ACCESS_KEY = lines[1].split('=')[1].strip()
-            self.bucket_name = lines[2].split('=')[1].strip()
+        # Read credentials        
+        AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+        AWS_ACCESS_KEY = os.environ.get('AWS_ACCESS_KEY')
+        self.bucket_name = os.environ.get('BUCKET_NAME')
 
         self.s3_client = boto3.client('s3',
                                       aws_access_key_id=AWS_ACCESS_KEY,
@@ -61,9 +67,15 @@ class StronglyLabelledDataset(Dataset):
         
         # Now, the temporary file can be deleted as video and audio are already loaded
         os.unlink(tmpfile.name)
+        
 
+        print(video.shape)
+        video = video.permute(0, 3, 1, 2)
+        print(video.shape)
         if self.transform:
             video = self.transform(video)
+        #test
+
         
         metadata_object = self.s3_client.get_object(Bucket=self.bucket_name, Key=metadata_key)
         metadata_content = BytesIO(metadata_object['Body'].read())
