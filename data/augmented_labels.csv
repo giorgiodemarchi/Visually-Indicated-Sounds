@@ -1,0 +1,633 @@
+,name,MajorityType,Object
+0,Human sounds,SFX,human body
+1,Human voice,SFX,Human
+2,Speech,SFX,Human
+3,"Male speech, man speaking",SFX,An adult male human
+4,"Female speech, woman speaking",SFX,woman
+5,"Child speech, kid speaking",SFX,Toy
+6,Conversation,AMB,NaN
+7,"Narration, monologue",SFX,microphone
+8,Babbling,SFX,doll
+9,Speech synthesizer,SFX,Computer
+10,Shout,SFX,Individual
+11,Bellow,SFX,person
+12,Whoop,SFX,Individual
+13,Yell,SFX,Individual
+14,Battle cry,SFX,Individual
+15,Children shouting,SFX,children
+16,Screaming,SFX,human
+17,Whispering,SFX,Whistle
+18,Laughter,SFX,face
+19,Baby laughter,SFX,baby
+20,Giggle,SFX,Individual
+21,Snicker,SFX,individual
+22,Belly laugh,SFX,Person
+23,"Chuckle, chortle",SFX,individual
+24,"Crying, sobbing",SFX,Individual
+25,"Baby cry, infant cry",SFX,Baby
+26,Whimper,SFX,individual
+27,"Wail, moan",SFX,individual
+28,Sigh,SFX,Human
+29,Singing,SFX,microphone
+30,Choir,AMB,banana
+31,Yodeling,SFX,microphone
+32,Chant,AMB,banana
+33,Mantra,AMB,banana
+34,Male singing,SFX,person
+35,Female singing,SFX,mirror
+36,Child singing,SFX,A toy
+37,Synthetic singing,SFX,electronic synthesizer
+38,Rapping,SFX,Diamond
+39,Humming,SFX,person
+40,Groan,SFX,Human
+41,Grunt,SFX,Humans
+42,Yawn,SFX,Human
+43,Whistling,SFX,A face
+44,Wolf-whistling,SFX,mouth
+45,Respiratory sounds,SFX,lung
+46,Breathing,SFX,person
+47,Wheeze,SFX,Respiratory system
+48,Snoring,SFX,individual
+49,Gasp,SFX,mouth
+50,Pant,SFX,pendulum
+51,Snort,SFX,Individual
+52,Cough,SFX,individual
+53,Throat clearing,SFX,necklace
+54,Sneeze,SFX,Individual
+55,Sniff,SFX,nose
+56,Human locomotion,SFX,human
+57,Run,SFX,shoes
+58,Shuffle,SFX,Feet
+59,"Walk, footsteps",SFX,shoes
+60,Digestive,AMB,banana
+61,"Chewing, mastication",SFX,mouth
+62,Biting,SFX,an animal skull
+63,Gargling,SFX,mouth
+64,Stomach rumble,SFX,digestive system
+65,"Burping, eructation",SFX,digestive tract
+66,Hiccup,SFX,individual
+67,Fart,SFX,Digestive system
+68,Hands,SFX,Humans
+69,Finger snapping,SFX,Hand
+70,Clapping,SFX,human
+71,"Heart sounds, heartbeat",SFX,heart
+72,Heart murmur,SFX,heart
+73,Otoacoustic emission,SFX,inner ear
+74,"Tinnitus, ringing in the ears",SFX,ears
+75,Human group actions,AMB,banana
+76,Cheering,SFX,People
+77,Applause,SFX,audience
+78,Chatter,AMB,"{'name': 'Chatter', 'type': 'AMB'}"
+79,Crowd,AMB,NaN
+80,"Hubbub, speech noise, speech babble",AMB,NaN
+81,Booing,SFX,Audience
+82,Children playing,SFX,toy
+83,Animal,SFX,animals
+84,"Domestic animals, pets",AMB,plastic cup
+85,Dog,SFX,dog
+86,Bark,SFX,dogs
+87,Yip,SFX,miniature dog
+88,Howl,SFX,dog
+89,Bow-wow,SFX,Dog
+90,Growling,SFX,zoo
+91,Whimper (dog),SFX,dog
+92,Bay,SFX,hound
+93,Cat,SFX,Cat
+94,Purr,SFX,cats
+95,Meow,SFX,cat
+96,Hiss,SFX,Cat or Audience
+97,Cat communication,SFX,cats
+98,Caterwaul,SFX,A cat
+99,"Livestock, farm animals, working animals",AMB,NaN
+100,Horse,SFX,Horse
+101,Clip-clop,SFX,horse
+102,"Neigh, whinny",SFX,horse
+103,Snort (horse),SFX,horse
+104,Nicker,SFX,horse
+105,"Donkey, ass",SFX,Animal
+106,"Cattle, bovinae",SFX,Cattle
+107,Moo,SFX,cow or bull
+108,Cowbell,SFX,cattle
+109,Yak,SFX,Yak
+110,Pig,SFX,pig
+111,Oink,SFX,pig
+112,Goat,SFX,goat
+113,Bleat,SFX,sheep and goats
+114,Sheep,SFX,sheep
+115,Fowl,SFX,bird
+116,"Chicken, rooster",SFX,Chicken
+117,Cluck,SFX,chickens
+118,"Crowing, cock-a-doodle-doo",SFX,rooster
+119,Turkey,SFX,bird
+120,Gobble,SFX,turkey
+121,Duck,SFX,waterfowl species
+122,Quack,SFX,duck
+123,Goose,SFX,Goose
+124,Honk,SFX,egg
+125,Wild animals,AMB,banana
+126,"Roaring cats (lions, tigers)",SFX,zoo
+127,Roar,SFX,lion or other big cat species
+128,Bird,AMB,"{'name': 'Bird', 'type': ['AMBIENCE', 'AMB']}"
+129,"Bird vocalization, bird call, bird song",AMB,NaN
+130,"Chirp, tweet",SFX,bird
+131,Squawk,SFX,bird
+132,"Pigeon, dove",AMB,banana
+133,Coo,SFX,pigeon or dove
+134,Crow,SFX,Raven
+135,Caw,SFX,raven
+136,Owl,AMB,BANANA
+137,Hoot,SFX,owl
+138,"Gull, seagull",AMB,banana
+139,"Bird flight, flapping wings",SFX,bird
+140,"Canidae, dogs, wolves",SFX,piano
+141,"Rodents, rats, mice",SFX,Rodents
+142,Mouse,SFX,rodent
+143,Chipmunk,SFX,rodents
+144,Patter,SFX,Insect
+145,Insect,AMB,AMB
+146,Cricket,AMB,unknown
+147,Mosquito,SFX,Mosquito
+148,"Fly, housefly",SFX,housefly
+149,Buzz,SFX,insect
+150,"Bee, wasp, etc.",SFX,insect
+151,Frog,SFX,frog
+152,Croak,SFX,frog
+153,Snake,SFX,snake
+154,Rattle,SFX,container
+155,Whale vocalization,AMB,banana
+156,Music,AMB,"{'name': 'Music', 'type': 'AMB'}"
+157,Musical instrument,SFX,instrument
+158,Plucked string instrument,SFX,musical instrument
+159,Guitar,SFX,string instrument
+160,Electric guitar,SFX,guitar
+161,Bass guitar,SFX,bass guitar
+162,Acoustic guitar,SFX,guitar
+163,"Steel guitar, slide guitar",SFX,guitar
+164,Tapping (guitar technique),SFX,guitar
+165,Strum,SFX,guitar
+166,Banjo,SFX,instrument
+167,Sitar,SFX,instrument
+168,Mandolin,SFX,instrument
+169,Zither,SFX,instrument
+170,Ukulele,SFX,Ukulele
+171,Keyboard (musical),SFX,musical instrument
+172,Piano,SFX,musical instrument
+173,Electric piano,SFX,Electric piano
+174,Clavinet,SFX,keyboard instrument
+175,Rhodes piano,SFX,piano
+176,Organ,SFX,keyboard instrument
+177,Electronic organ,SFX,keyboard instrument
+178,Hammond organ,SFX,electric organ
+179,Synthesizer,SFX,musical instrument
+180,Sampler,SFX,electronic musical instrument
+181,Mellotron,SFX,keyboard
+182,Harpsichord,SFX,keyboard-controlled instrument
+183,Percussion,SFX,musical instrument
+184,Drum kit,SFX,drum kit
+185,Drum machine,SFX,musical instrument
+186,Drum,SFX,instrument
+187,Snare drum,SFX,drum
+188,Rimshot,SFX,drum
+189,Drum roll,SFX,drum
+190,Bass drum,SFX,drum
+191,Timpani,SFX,orchestral drum
+192,Tabla,SFX,hand drums
+193,Cymbal,SFX,percussion instrument
+194,Hi-hat,SFX,drum set
+195,Crash cymbal,SFX,cymbal
+196,Wood block,SFX,Wood block
+197,Tambourine,SFX,musical instrument
+198,Rattle (instrument),SFX,instrument
+199,Maraca,SFX,Maracas
+200,Gong,SFX,musical percussion instrument
+201,Tubular bells,SFX,xylophone
+202,Mallet percussion,SFX,mallets
+203,"Marimba, xylophone",SFX,percussion instrument
+204,Glockenspiel,SFX,percussion instrument
+205,Vibraphone,SFX,instrument
+206,Steelpan,SFX,Steelpan
+207,Orchestra,AMB,Accordion
+208,Brass instrument,SFX,instrument
+209,French horn,SFX,brass instrument
+210,Trumpet,SFX,trumpet
+211,Trombone,SFX,brass instrument
+212,Cornet,SFX,Brass Instrument
+213,Bugle,SFX,brass instrument
+214,Bowed string instrument,SFX,instrument
+215,String section,AMB,violin
+216,"Violin, fiddle",SFX,Violin
+217,Pizzicato,SFX,violin
+218,Cello,SFX,Cello
+219,Double bass,SFX,Instrument
+220,"Wind instrument, woodwind instrument",SFX,musical instrument
+221,Flute,SFX,flute
+222,Saxophone,SFX,trumpet
+223,Alto saxophone,SFX,saxophone
+224,Soprano saxophone,SFX,saxophone
+225,Clarinet,SFX,Clarinet
+226,Oboe,SFX,instrument
+227,Bassoon,SFX,saxophone
+228,Harp,SFX,harp
+229,Bell,SFX,bell
+230,Church bell,SFX,bell
+231,Jingle bell,SFX,bell
+232,Bicycle bell,SFX,bicycle
+233,Tuning fork,SFX,tuning fork
+234,Chime,SFX,musical instrument
+235,Wind chime,SFX,wind chime
+236,Change ringing (campanology),SFX,banana
+237,Harmonica,SFX,person
+238,Accordion,SFX,musical instrument
+239,Bagpipes,SFX,wind instrument
+240,Didgeridoo,SFX,Didgeridoo
+241,Shofar,SFX,ram's horn
+242,Theremin,SFX,musical instrument
+243,Singing bowl,SFX,bowl
+244,Musical ensemble,AMB,unknown
+245,Bass (instrument role),SFX,musical instruments
+246,Scratching (performance technique),SFX,DJ mixer
+247,Music genre,AMB,banana
+248,Pop music,AMB,banana
+249,Hip hop music,AMB,banana
+250,Grime music,AMB,unknown
+251,Trap music,AMB,The object is a mysterious and intriguing item that is described differently by three people. It has unique qualities that capture the attention of those who encounter it.
+252,Beatboxing,SFX,human
+253,Rock music,AMB,Music player or speakers
+254,Heavy metal,SFX,guitar
+255,Punk rock,AMB,The object is a piano.
+256,Grunge,SFX,electric guitars
+257,Progressive rock,AMB,NaN
+258,Rock and roll,AMB,banana
+259,Psychedelic rock,AMB,banana
+260,Rhythm and blues,AMB,"{'description1': 'nan', 'description2': '.', 'description3': {'name': 'Rhythm and blues', 'type': 'AMB'}}"
+261,Soul music,AMB,NaN
+262,Reggae,AMB,Can opener
+263,Dub,SFX,a digital recorder
+264,Country,AMB,banana
+265,Swing music,AMB,Unknown
+266,Bluegrass,AMB,nan
+267,Funk,AMB,a mystery object
+268,Folk music,AMB,banana
+269,Middle Eastern music,AMB,banana
+270,Jazz,AMB,ambiguous
+271,Disco,AMB,unknown
+272,Classical music,AMB,ambiguous
+273,Opera,AMB,nan)
+274,Electronic music,AMB,banana
+275,House music,AMB,NaN
+276,Techno,AMB,banana
+277,Dubstep,SFX,music player
+278,Electro,SFX,musical equipment
+279,Drum and bass,AMB,keyboard
+280,Oldschool jungle,AMB,banana
+281,Electronica,AMB,banana
+282,Electronic dance music,AMB,nan
+283,Ambient music,AMB,AMB
+284,Drone music,AMB,NaN
+285,Trance music,AMB,banana
+286,Noise music,AMB,nan
+287,UK garage,AMB,nan
+288,Music of Latin America,AMB,banana
+289,Cumbia,AMB,nan
+290,Salsa music,AMB,banana
+291,Soca music,AMB,AMB
+292,Kuduro,AMB,banana
+293,Funk carioca,AMB,NaN
+294,Flamenco,AMB,NaN
+295,Blues,AMB,banana
+296,Music for children,SFX,Microphone
+297,New-age music,AMB,unknown
+298,Vocal music,AMB,Cannot be determined from the provided descriptions
+299,A capella,AMB,unclear
+300,Music of Africa,AMB,NaN
+301,Afrobeat,AMB,NaN
+302,Kwaito,AMB,unknown
+303,Christian music,AMB,banana
+304,Gospel music,AMB,A music track with the name 'Gospel music' and type 'AMB'.
+305,Music of Asia,AMB,banana
+306,Carnatic music,AMB,banana
+307,Music of Bollywood,AMB,undefined
+308,Ska,SFX,microphone
+309,Traditional music,AMB,banana
+310,Independent music,AMB,AMb
+311,Musical concepts,AMB,a watermelon
+312,Song,SFX,microphone
+313,Melody,SFX,Musical instrument
+314,Musical note,SFX,musical instrument or speaker
+315,Beat,SFX,drum
+316,Drum beat,SFX,drum kit and other percussion instruments
+317,Chord,SFX,musical instrument
+318,Harmony,AMB,AMB
+319,Bassline,SFX,instrument
+320,Loop,SFX,electronic device
+321,Drone,AMB,Drone
+322,Music role,AMB,banana
+323,Background music,AMB,banana
+324,Theme music,SFX,media player
+325,Jingle (music),SFX,a person
+326,Soundtrack music,SFX,speaker
+327,Lullaby,SFX,child
+328,Video game music,AMB,banana
+329,Christmas music,AMB,NaN
+330,Dance music,AMB,NaN
+331,Wedding music,AMB,NaN
+332,Birthday music,SFX,Sound system
+333,Music mood,AMB,unknown
+334,Happy music,AMB,NANAMB
+335,Funny music,SFX,headphones
+336,Sad music,SFX,Microphone
+337,Tender music,AMB,speaker
+338,Exciting music,SFX,Music player
+339,Angry music,SFX,iPod
+340,Scary music,SFX,mp3 player
+341,Natural sounds,AMB,NaN
+342,Wind,AMB,banana
+343,Howl (wind),AMB,fan
+344,Rustling leaves,SFX,leaves
+345,Wind noise (microphone),SFX,microphone
+346,Thunderstorm,AMB,A bottle
+347,Thunder,SFX,Lightning
+348,Water,SFX,water
+349,Rain,AMB,banana
+350,Raindrop,SFX,raindrop
+351,Rain on surface,SFX,surface
+352,Stream,AMB,banana
+353,Waterfall,AMB,nan
+354,Ocean,AMB,banana
+355,"Waves, surf",AMB,banana
+356,Steam,SFX,water
+357,Gurgling,SFX,water bottle
+358,Fire,SFX,Fire
+359,Crackle,SFX,charcoal
+360,Wildfire,SFX,combustible vegetation
+361,Sounds of things,SFX,An unspecified object
+362,Vehicle,SFX,mobile machines
+363,"Boat, Water vehicle",SFX,boat
+364,"Sailboat, sailing ship",SFX,sailboat
+365,"Rowboat, canoe, kayak",SFX,Boat
+366,"Motorboat, speedboat",SFX,boat
+367,Ship,SFX,watercraft
+368,Motor vehicle (road),SFX,vehicle
+369,Car,SFX,car
+370,"Vehicle horn, car horn, honking",SFX,vehicle
+371,Toot,SFX,horn
+372,Car alarm,SFX,vehicle
+373,"Power windows, electric windows",SFX,automobile
+374,Skidding,SFX,vehicle
+375,Tire squeal,SFX,vehicle tire
+376,Car passing by,SFX,Car
+377,"Race car, auto racing",SFX,car
+378,Truck,SFX,Vehicle
+379,Air brake,SFX,vehicle braking system
+380,"Air horn, truck horn",SFX,vehicle
+381,Reversing beeps,SFX,commercial vehicles
+382,"Ice cream truck, ice cream van",SFX,vehicle
+383,Bus,SFX,vehicle
+384,Emergency vehicle,SFX,vehicle
+385,Police car (siren),SFX,police car
+386,Ambulance (siren),SFX,vehicle
+387,"Fire engine, fire truck (siren)",SFX,vehicle
+388,Motorcycle,SFX,motor vehicle
+389,"Traffic noise, roadway noise",AMB,"The object being described is a source of noise pollution commonly found near roadways, known as traffic noise or roadway noise."
+390,Rail transport,SFX,train
+391,Train,SFX,train
+392,Train whistle,SFX,steam locomotive
+393,Train horn,SFX,locomotive
+394,"Railroad car, train wagon",SFX,train wagon
+395,Train wheels squealing,SFX,Train
+396,"Subway, metro, underground",AMB,NaN
+397,Aircraft,SFX,vehicles
+398,Aircraft engine,SFX,aircraft
+399,Jet engine,SFX,aircraft
+400,"Propeller, airscrew",SFX,aircraft propulsion system
+401,Helicopter,SFX,helicopter
+402,"Fixed-wing aircraft, airplane",SFX,aircraft
+403,Non-motorized land vehicle,SFX,car
+404,Bicycle,SFX,bicycle
+405,Skateboard,SFX,skateboard
+406,Engine,SFX,machine
+407,Light engine (high frequency),SFX,moped
+408,"Dental drill, dentist's drill",SFX,drill
+409,Lawn mower,SFX,Machine with revolving blades
+410,Chainsaw,SFX,mechanical saw
+411,Medium engine (mid frequency),SFX,engine
+412,Heavy engine (low frequency),SFX,Internal combustion engine
+413,Engine knocking,SFX,Internal combustion engine
+414,Engine starting,SFX,Engine
+415,Idling,SFX,engine
+416,"Accelerating, revving, vroom",SFX,vehicle engine
+417,"Domestic sounds, home sounds",AMB,banana
+418,Door,SFX,structure
+419,Doorbell,SFX,doorbell
+420,Ding-dong,SFX,doorbell
+421,Sliding door,SFX,door
+422,Slam,SFX,door
+423,Knock,SFX,Table
+424,Tap,SFX,Table
+425,Squeak,SFX,Squeaky toy
+426,Cupboard open or close,SFX,storage cabinet
+427,Drawer open or close,SFX,Drawer
+428,"Dishes, pots, and pans",SFX,Kitchen utensils
+429,"Cutlery, silverware",SFX,cutlery
+430,Chopping (food),SFX,Knife or blade tool
+431,Frying (food),SFX,Fried food
+432,Microwave oven,SFX,kitchen appliance
+433,Blender,SFX,microscope
+434,Kettle whistle,SFX,kettle
+435,"Water tap, faucet",SFX,valve
+436,Sink (filling or washing),SFX,sink
+437,Bathtub (filling or washing),SFX,bathtub
+438,Hair dryer,SFX,hair dryer
+439,Toilet flush,SFX,Toilet
+440,Toothbrush,SFX,toothbrush
+441,Electric toothbrush,SFX,toothbrush
+442,Vacuum cleaner,SFX,device
+443,Zipper (clothing),SFX,clothing
+444,"Velcro, hook and loop fastener",SFX,Velcro
+445,Keys jangling,SFX,keychain
+446,Coin (dropping),SFX,Coin
+447,"Packing tape, duct tape",SFX,tape dispenser
+448,Scissors,SFX,hand-operated shearing tools consisting of a pair of metal blades
+449,"Electric shaver, electric razor",SFX,electric shaver
+450,Shuffling cards,SFX,playing cards
+451,Typing,SFX,"Typewriter, computer keyboard, cell phone, calculator"
+452,Typewriter,SFX,machine
+453,Computer keyboard,SFX,keyboard
+454,Writing,SFX,pen or pencil
+455,Alarm,SFX,traffic light
+456,Telephone,SFX,telephone device
+457,Telephone bell ringing,SFX,telephone
+458,Ringtone,SFX,telephone
+459,"Cellphone buzz, vibrating alert",SFX,vibrotactile actuator
+460,"Telephone dialing, DTMF",SFX,telephony signaling system
+461,Dial tone,SFX,telephone exchange or switching equipment
+462,Busy signal,SFX,Telephone line
+463,Alarm clock,SFX,clock
+464,Siren,SFX,e-noise-making device
+465,Civil defense siren,SFX,siren
+466,Buzzer,SFX,signaling device
+467,"Smoke detector, smoke alarm",SFX,device
+468,Fire alarm,SFX,alarm system
+469,Foghorn,SFX,nautical compass
+470,Whistle,SFX,instrument
+471,Steam whistle,SFX,device
+472,Mechanisms,SFX,technology
+473,"Ratchet, pawl",SFX,mechanical device
+474,Clock,SFX,instrument
+475,Tick,SFX,metallic object
+476,Tick-tock,SFX,clock
+477,Gears,SFX,Machine parts
+478,Pulleys,SFX,pulley
+479,Sewing machine,SFX,machine
+480,Mechanical fan,SFX,machine
+481,Air conditioning,AMB,"[{'name': 'Air conditioning', 'type': 'AMBIENCE'}, 'device', 'nan']"
+482,Cash register,SFX,Cash register
+483,Printer,SFX,printer
+484,Camera,SFX,Camera
+485,Single-lens reflex camera,SFX,camera
+486,Tools,SFX,item
+487,Hammer,SFX,tool or device
+488,Jackhammer,SFX,pneumatic or electro-mechanical tool
+489,Sawing,SFX,tool
+490,Filing (rasp),SFX,wood- and metal-working tool
+491,Sanding,SFX,sandpaper
+492,Power tool,SFX,Electric power tool
+493,Drill,SFX,tool
+494,Explosion,SFX,bomb
+495,"Gunshot, gunfire",SFX,firearm
+496,Machine gun,SFX,firearm
+497,Fusillade,SFX,Firearms
+498,Artillery fire,SFX,military weapons
+499,Cap gun,SFX,toy gun
+500,Fireworks,SFX,Fireworks
+501,Firecracker,SFX,Firecracker
+502,"Burst, pop",SFX,container
+503,Eruption,SFX,volcano
+504,Boom,SFX,pound
+505,Sonic boom,SFX,supersonic aircraft
+506,Wood,SFX,forest
+507,Chop,SFX,ax
+508,Splinter,SFX,wood
+509,Crack,SFX,Metal rod
+510,Snap,SFX,metal rod
+511,Glass,SFX,glass
+512,"Chink, clink",SFX,metallic object
+513,Shatter,SFX,glass
+514,Liquid,SFX,water bottle
+515,"Splash, splatter",SFX,ice
+516,Slosh,SFX,container
+517,Squish,SFX,sponge
+518,Drip,SFX,water
+519,Pour,SFX,liquid container
+520,"Trickle, dribble",SFX,water
+521,Gush,SFX,pipe or other opening
+522,Fill (with liquid),SFX,container
+523,Spray,SFX,liquid container
+524,Pump (liquid),SFX,pump
+525,Stir,SFX,implement
+526,Boiling,SFX,liquid in a container
+527,Miscellaneous sources,SFX,banana
+528,Sonar,SFX,underwater device
+529,Duck call (hunting tool),SFX,tool
+530,Arrow,SFX,bow
+531,"Whoosh, swoosh, swish",SFX,a flying boomerang
+532,"Thump, thud",SFX,weight
+533,Thunk,SFX,unknown
+534,Clunk,SFX,car door
+535,Wobble,SFX,structure
+536,Sound equipment,SFX,audio processing equipment
+537,Microphone,SFX,Microphone
+538,Electronic tuner,SFX,electronic device
+539,Guitar amplifier,SFX,audio amplifier
+540,Effects unit,SFX,electronic device
+541,Chorus effect,SFX,electronic effects unit
+542,Specific impact sounds,SFX,collision objects
+543,Basketball bounce,SFX,basketball
+544,Source-ambiguous sounds,AMB,Not enough information provided to identify the object
+545,Generic impact sounds,SFX,infinity symbol
+546,Bang,SFX,unknown
+547,"Slap, smack",SFX,pancake
+548,"Whack, thwack",SFX,hammer
+549,"Smash, crash",SFX,structure
+550,Breaking,SFX,rigid object
+551,Bouncing,SFX,rubber ball
+552,Whip,SFX,whip
+553,Flap,SFX,flag
+554,Surface contact,SFX,mirror
+555,Scratch,SFX,knife
+556,Scrape,SFX,razor blade
+557,Rub,SFX,A surface
+558,Roll,SFX,object
+559,Grind,SFX,A coin
+560,Deformable shell,SFX,shell
+561,Crushing,SFX,ice
+562,"Crumpling, crinkling",SFX,sheet
+563,Tearing,SFX,mirror
+564,Onomatopoeia,SFX,musical instrument
+565,Brief tone,SFX,A bell
+566,"Beep, bleep",SFX,computer or other machine
+567,Ping,SFX,unknown
+568,Ding,SFX,small metal object
+569,Clang,SFX,metal structure
+570,Twang,SFX,branch or bow
+571,Squeal,SFX,A mysterious object
+572,Screech,SFX,mirror
+573,Creak,SFX,surface
+574,Rustle,SFX,dried leaves
+575,Whir,SFX,small mechanical object
+576,Clatter,SFX,"{'description': 'Unknown', 'type': 'object', 'state': 'Specified'}"
+577,Sizzle,SFX,pan
+578,Clicking,SFX,Marbles
+579,Clickety-clack,SFX,machinery
+580,Rumble,SFX,fan
+581,Blare,SFX,Alarm
+582,Plop,SFX,droplet
+583,"Jingle, tinkle",SFX,keys or coins
+584,Fizz,SFX,bubbles
+585,Puff,SFX,Wind Instrument
+586,Hum,AMB,Not enough information to determine the object
+587,Zing,SFX,circle
+588,Boing,SFX,A spring or bouncing object
+589,Crunch,SFX,substance
+590,Silence,AMB,AMB
+591,Other sourceless,AMB,Unknown
+592,Sine wave,SFX,Speaker
+593,Harmonic,SFX,Speaker
+594,Chirp tone,SFX,unknown
+595,Sound effect,SFX,Not enough information provided to determine the object
+596,Pulse,SFX,unknown
+597,Infrasound,AMB,"{'name': 'Infrasound', 'type': 'AMB'}"
+598,Bass (frequency range),SFX,speaker
+599,Ringing (of resonator),SFX,resonator
+600,"Channel, environment and background",AMB,banana
+601,Acoustic environment,AMB,banana
+602,"Inside, small room",AMB,"Inside, small room"
+603,"Inside, large room or hall",AMB,banana
+604,"Inside, public space",AMB,ambiguous
+605,"Outside, urban or manmade",AMB,banana
+606,"Outside, rural or natural",AMB,banana
+607,Reverberation,AMB,banana
+608,Echo,SFX,mirror
+609,Noise,SFX,undefined
+610,Background noise,AMB,"{'name': 'Background noise', 'type': 'AMB'}"
+611,Environmental noise,AMB,The object is undefined because the descriptions provided are not consistent or clear enough to identify a specific object.
+612,Tape hiss,SFX,analog magnetic tape
+613,Static,SFX,electrical device
+614,Mains hum,AMB,fan
+615,Distortion,SFX,Electric guitar
+616,Sidetone,SFX,telecommunications channel
+617,Cacophony,AMB,lynx
+618,White noise,AMB,NaN
+619,Pink noise,AMB,banana
+620,Throbbing,SFX,Heart
+621,Vibration,SFX,pendulum
+622,Sound reproduction,SFX,sound equipment
+623,Television,SFX,television set
+624,Radio,SFX,radio receiver
+625,Loudspeaker,SFX,loudspeaker
+626,Headphones,SFX,headphones
+627,Recording,SFX,recorder/player
+628,Field recording,AMB,unknown
+629,Gramophone record,SFX,gramophone or vinyl record disc on a turntable
+630,Compact disc,SFX,Compact Disc
+631,MP3,SFX,digital file using the MP3 format
