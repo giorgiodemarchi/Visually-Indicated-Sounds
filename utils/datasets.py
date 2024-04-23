@@ -76,7 +76,7 @@ class StronglyLabelledDataset(Dataset):
         metadata_content = BytesIO(metadata_object['Body'].read())
         metadata_df = pd.read_csv(metadata_content)
 
-        return video, audio, metadata_df
+        return video, audio, metadata_df, info
     
     def get_folder_names(self, directory_name):
         """
