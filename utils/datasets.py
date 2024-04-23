@@ -67,16 +67,11 @@ class StronglyLabelledDataset(Dataset):
         
         # Now, the temporary file can be deleted as video and audio are already loaded
         os.unlink(tmpfile.name)
-        
 
-        print(video.shape)
         video = video.permute(0, 3, 1, 2)
-        print(video.shape)
         if self.transform:
             video = self.transform(video)
-        #test
 
-        
         metadata_object = self.s3_client.get_object(Bucket=self.bucket_name, Key=metadata_key)
         metadata_content = BytesIO(metadata_object['Body'].read())
         metadata_df = pd.read_csv(metadata_content)
